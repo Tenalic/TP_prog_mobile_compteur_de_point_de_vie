@@ -21,12 +21,12 @@
 
     <Chronometer
         android:id="@+id/chronometer"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_width="145dp"
+        android:layout_height="66dp"
         android:layout_marginTop="65dp"
         android:layout_marginEnd="204dp"
         android:layout_marginRight="204dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginBottom="43dp"
         android:textColor="@color/colorBlanc"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,19 +134,10 @@
         android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/chronometer"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player1"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/dice2" />
-
-    <com.google.ads.AdView
-        android:id="@id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        ads:adSize="BANNER"
-        ads:adUnitId="VOTRE_ID_EDITEUR"
-        ads:loadAdOnCreate="true"
-        ads:testDevices="TEST_EMULATOR,VOTRE_ID_APPAREIL"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="48dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

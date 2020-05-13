@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Life_compteur</string>
+    <string name="app_name">Life Compteur</string>
     <string name="player_1">Player 1</string>
     <string name="point_msg">Points : 0</string>
     <string name="title_activity_historique">Historique</string>

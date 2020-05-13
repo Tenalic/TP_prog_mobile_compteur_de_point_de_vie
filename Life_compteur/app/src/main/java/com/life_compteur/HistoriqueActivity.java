@@ -81,8 +81,8 @@ public class HistoriqueActivity extends AppCompatActivity {
      * @param id   : id de la textZone qui sera creer
      */
     protected void createLifeZoneText(Coup coup, final int id) {
-        lifePointP1 = lifePointP1 + id;//coup.getLifeModificationPlayer1() * whichSigne(coup.getSigneModificationPlayer1());
-        //lifePointP2 = lifePointP2 + coup.getLifeModificationPlayer2() * whichSigne(coup.getSigneModificationPlayer2());
+        lifePointP1 = lifePointP1 + coup.getLifeModificationPlayer1() * whichSigne(coup.getSigneModificationPlayer1());
+        lifePointP2 = lifePointP2 + coup.getLifeModificationPlayer2() * whichSigne(coup.getSigneModificationPlayer2());
         TextView text = new TextView(HistoriqueActivity.this);
         text.setText(Integer.toString(id));
         text.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, 0));
