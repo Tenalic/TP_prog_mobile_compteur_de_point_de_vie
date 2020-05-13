@@ -1,0 +1,2 @@
+rootProject.name='Life_compteur'
+include ':app'

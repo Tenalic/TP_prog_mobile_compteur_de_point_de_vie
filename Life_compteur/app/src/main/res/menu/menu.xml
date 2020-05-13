@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/logo"
+        android:title="Reset life point"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/resetlp"
+                android:title="Reset life point"/>
+
+            <item
+                android:id="@+id/resettimer"
+                android:title="Reset timer" />
+
+            <item
+                android:id="@+id/setting"
+                android:title="Setting"/>
+
+        </menu>
+
+    </item>
+
+
+</menu>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Life_compteur</string>
+    <string name="player_1">Player 1</string>
+    <string name="point_msg">Points : 0</string>
+    <string name="title_activity_historique">Historique</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lifePointPlayer1">8000</string>
+    <string name="lifePointPlayer2">8000</string>
+
+    <string name="lifestart">starLifePoint</string>
+    <string name="listeCoup">listeCoup</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

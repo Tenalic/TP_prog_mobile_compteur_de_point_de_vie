@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lifestarttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Life start"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/lifestartinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/timerminutestext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timer minutes" />
+
+    <EditText
+        android:id="@+id/timerminutesinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/timersecondestext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timer secondes" />
+
+    <EditText
+        android:id="@+id/timersecondesinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonfinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish" />
+
+</LinearLayout>
