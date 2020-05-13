@@ -174,6 +174,7 @@ public class MainActivity extends AppCompatActivity {
                             lifePlayer1.setText(lifePointPlayer1.toString());
                             Toast.makeText(getApplicationContext(), "+" + stringNumber, Toast.LENGTH_SHORT).show();
                             saveLifePoint();
+                            calculator.getInputNumber().setText("");
                         } catch (NumberFormatException e) {
                             Toast.makeText(getApplicationContext(), "Erreur", Toast.LENGTH_SHORT).show();
                         }
@@ -195,6 +196,7 @@ public class MainActivity extends AppCompatActivity {
                             lifePlayer1.setText(lifePointPlayer1.toString());
                             Toast.makeText(getApplicationContext(), "-" + stringNumber, Toast.LENGTH_SHORT).show();
                             saveLifePoint();
+                            calculator.getInputNumber().setText("");
                         } catch (NumberFormatException e) {
                             Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
                         }
@@ -248,6 +250,7 @@ public class MainActivity extends AppCompatActivity {
                             lifePlayer2.setText(lifePointPlayer2.toString());
                             Toast.makeText(getApplicationContext(), "+" + stringNumber, Toast.LENGTH_SHORT).show();
                             saveLifePoint();
+                            calculator.getInputNumber().setText("");
                         } catch (NumberFormatException e) {
                             Toast.makeText(getApplicationContext(), "Erreur", Toast.LENGTH_SHORT).show();
                         }
@@ -269,6 +272,7 @@ public class MainActivity extends AppCompatActivity {
                             lifePlayer2.setText(lifePointPlayer2.toString());
                             Toast.makeText(getApplicationContext(), "-" + stringNumber, Toast.LENGTH_SHORT).show();
                             saveLifePoint();
+                            calculator.getInputNumber().setText("");
                         } catch (NumberFormatException e) {
                             Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
                         }
