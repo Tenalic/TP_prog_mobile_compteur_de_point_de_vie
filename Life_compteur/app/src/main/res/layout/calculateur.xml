@@ -10,9 +10,9 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="268dp"
-        android:layout_marginRight="268dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="520dp"
+        android:layout_marginRight="520dp"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -45,12 +45,30 @@
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <Button
+        android:id="@+id/div2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="375dp"
+        android:layout_marginRight="375dp"
+        android:layout_marginBottom="31dp"
+        android:text="/2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberInput"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginLeft="124dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="124dp"
         android:text="FIn"
         android:textSize="50sp"
         app:layout_constraintStart_toEndOf="@+id/buttonMoins"
@@ -70,7 +88,9 @@
         android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/buttonMoins"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

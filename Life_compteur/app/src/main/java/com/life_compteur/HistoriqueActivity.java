@@ -38,6 +38,9 @@ public class HistoriqueActivity extends AppCompatActivity {
          * Recupère les donnée passé en entré
          */
         if (intent != null) {
+            int lifeStart = intent.getIntExtra(getResources().getString(R.string.listeCoup), 8000);
+            lifePointP1 = lifeStart;
+            lifePointP2 = lifeStart;
             if (intent.hasExtra(getResources().getString(R.string.listeCoup))) {
                 ArrayList<Coup> listeCoup = intent.getParcelableArrayListExtra(getResources().getString(R.string.listeCoup));
                 if (listeCoup != null) {
@@ -48,17 +51,9 @@ public class HistoriqueActivity extends AppCompatActivity {
                         id++;
                     }
                 }
-
             }
-
-            int lifeStart = intent.getIntExtra(getResources().getString(R.string.listeCoup), 8000);
-            lifePointP1 = lifeStart;
-            lifePointP2 = lifeStart;
-
-        } else {
-            lifePointP1 = 8000;
-            lifePointP2 = 8000;
         }
+
 
         /**
          * retourne vers MainActivity et retourne la liste des coup a annueler si non vide
@@ -86,9 +81,10 @@ public class HistoriqueActivity extends AppCompatActivity {
      * @param id   : id de la textZone qui sera creer
      */
     protected void createLifeZoneText(Coup coup, final int id) {
-        lifePointP1 = lifePointP1 + coup.getLifeModificationPlayer1() * whichSigne(coup.getSigneModificationPlayer1());
-        lifePointP2 = lifePointP2 + coup.getLifeModificationPlayer2() * whichSigne(coup.getSigneModificationPlayer2());
+        lifePointP1 = lifePointP1 + id;//coup.getLifeModificationPlayer1() * whichSigne(coup.getSigneModificationPlayer1());
+        //lifePointP2 = lifePointP2 + coup.getLifeModificationPlayer2() * whichSigne(coup.getSigneModificationPlayer2());
         TextView text = new TextView(HistoriqueActivity.this);
+        text.setText(Integer.toString(id));
         text.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, 0));
         text.setText(lifePointP1 + " " + ("+".equals(coup.getSigneModificationPlayer1()) ? "+" : "-") + coup.getLifeModificationPlayer1() + "    |   " + lifePointP2 + " " + ("+".equals(coup.getSigneModificationPlayer2()) ? "+" : "-") + coup.getLifeModificationPlayer2());
         text.setTextSize(40);

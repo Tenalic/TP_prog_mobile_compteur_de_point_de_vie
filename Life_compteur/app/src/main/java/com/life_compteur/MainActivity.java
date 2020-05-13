@@ -200,6 +200,23 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
+
+                calculator.getDivButton().setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        try {
+                            intNumber = lifePointPlayer1 / 2;
+                            listeCoup.add(new Coup(lifePointPlayer1, "-", intNumber, lifePointPlayer2, null, 0));
+                            lifePointPlayer1 = lifePointPlayer1 - intNumber;
+                            lifePlayer1.setText(lifePointPlayer1.toString());
+                            Toast.makeText(getApplicationContext(), "-" + intNumber, Toast.LENGTH_SHORT).show();
+                            saveLifePoint();
+                        } catch (Error e) {
+
+                        }
+                    }
+                });
+
                 calculator.getBackButton().setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -258,6 +275,22 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+                calculator.getDivButton().setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        try {
+                            intNumber = lifePointPlayer2 / 2;
+                            listeCoup.add(new Coup(lifePointPlayer1, null, 0, lifePointPlayer2, "-", intNumber));
+                            lifePointPlayer2 = lifePointPlayer2 - intNumber;
+                            lifePlayer2.setText(lifePointPlayer2.toString());
+                            Toast.makeText(getApplicationContext(), "-" + intNumber, Toast.LENGTH_SHORT).show();
+                            saveLifePoint();
+                        } catch (Error e) {
+
+                        }
+                    }
+                });
+
                 /**
                  * fermer la popup
                  */
@@ -286,6 +319,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Creer le menu lors de la création de l'activité
+     *
      * @param menu
      * @return
      */
@@ -351,6 +385,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * est appeler lorsque que l'on viens de l'activité historique
      * car elle nous renvoie des donnée
+     *
      * @param requestCode
      * @param resultCode
      * @param data
@@ -410,6 +445,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Sauvegarde les valeur d'origin du timer
+     *
      * @param min = minutes
      * @param sec = secondes
      */
@@ -425,6 +461,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Sauvegarde la valeur d'origine des points de vie
+     *
      * @param startLife = valeur de depart des points de vie
      */
     public void saveStartLifeParam(final int startLife) {

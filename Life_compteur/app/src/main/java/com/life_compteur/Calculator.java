@@ -15,6 +15,7 @@ public class Calculator extends Dialog {
     private Button backButton;
     private TextView titleView;
     private EditText inputNumber;
+    private Button divButton;
 
     public Calculator(Activity activity) {
         super(activity, R.style.Theme_AppCompat_DayNight_Dialog);
@@ -26,6 +27,7 @@ public class Calculator extends Dialog {
         this.titleView = findViewById(R.id.title);
         this.inputNumber = findViewById(R.id.numberInput);
         this.backButton = findViewById(R.id.back);
+        this.divButton = findViewById(R.id.div2);
     }
 
     public void build(String title) {
@@ -59,5 +61,9 @@ public class Calculator extends Dialog {
 
     public EditText getInputNumber() {
         return inputNumber;
+    }
+
+    public Button getDivButton() {
+        return divButton;
     }
 }
