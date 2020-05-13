@@ -1,4 +1,4 @@
-Application réalisé par :Oh!"
+Application réalisé par :
 Stéphane COCQUEBERT
 William LARCY
 
