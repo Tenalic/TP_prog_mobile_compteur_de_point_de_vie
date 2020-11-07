@@ -1,48 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/background2"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/lifestarttext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
         android:text="Life start"
-        android:gravity="center_horizontal" />
+        android:textColor="@color/colorRed"
+        android:textAlignment="textStart"
+        android:visibility="visible"
+        tools:visibility="visible" />
 
     <EditText
         android:id="@+id/lifestartinput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:visibility="visible"
+        android:textColor="@color/colorRed"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/timerminutestext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Timer minutes" />
+        android:text="Timer minutes"
+        android:textColor="@color/colorRed"
+        android:visibility="visible"
+        tools:visibility="visible" />
 
     <EditText
         android:id="@+id/timerminutesinput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:textColor="@color/colorRed"
+        android:inputType="number"
+        android:visibility="visible"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/timersecondestext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Timer secondes" />
+        android:textColor="@color/colorRed"
+        android:text="Timer secondes"
+        android:visibility="visible"
+        tools:visibility="visible" />
 
     <EditText
         android:id="@+id/timersecondesinput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:textColor="@color/colorRed"
+        android:inputType="number"
+        android:visibility="visible"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/buttonfinish"

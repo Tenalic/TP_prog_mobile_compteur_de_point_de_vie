@@ -21,11 +21,11 @@
 
     <Chronometer
         android:id="@+id/chronometer"
-        android:layout_width="145dp"
-        android:layout_height="66dp"
+        android:layout_width="173dp"
+        android:layout_height="76dp"
         android:layout_marginTop="65dp"
-        android:layout_marginEnd="204dp"
-        android:layout_marginRight="204dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginRight="173dp"
         android:layout_marginBottom="43dp"
         android:textColor="@color/colorBlanc"
         android:textSize="40sp"

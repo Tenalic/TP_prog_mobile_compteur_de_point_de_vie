@@ -139,7 +139,6 @@ public class MainActivity extends AppCompatActivity {
                     });
                     AlarmPopUp.show();
                     mediaPlayer.start();
-
                 }
             }
         });
@@ -359,6 +358,8 @@ public class MainActivity extends AppCompatActivity {
                 lifePointPlayer2 = lifeStart;
                 lifePlayer1.setText(lifePointPlayer1.toString());
                 lifePlayer2.setText(lifePointPlayer2.toString());
+                saveLifePoint();
+                this.listeCoup = new ArrayList<Coup>();
                 return true;
 
             /**
